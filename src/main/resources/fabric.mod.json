@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "playertagger",
+  "version": "${version}",
+  "name": "Player Tagger",
+  "description": "Tag and highlight players on servers with custom prefixes, colors, icons, cloud sync, and alerts.",
+  "authors": [
+    "Karl"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.karl.playertagger.PlayerTaggerMod"
+    ]
+  },
+  "mixins": [
+    "mixins.playertagger.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "1.8.9",
+    "oneconfig": "*"
+  }
+}
